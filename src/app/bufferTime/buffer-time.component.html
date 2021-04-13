@@ -1,0 +1,21 @@
+<h1>bufferTime(span, interval, scheduler)</h1>
+<p>splits based on a time period</p>
+<div class="row">
+  <div class="box">
+    <input type="text" (keyup)="setA($event.target.value)" placeholder="a" />
+    <input type="text" (keyup)="setB($event.target.value)" placeholder="span" />
+    <input
+      type="text"
+      (keyup)="setC($event.target.value)"
+      placeholder="interval"
+    />
+  </div>
+
+  <div class="box">
+    a: {{ a | async }} <br />
+    span: {{ b }} <br />
+    interval: {{ c }} <br />
+  </div>
+
+  <div class="box">result: {{ x | async }}</div>
+</div>

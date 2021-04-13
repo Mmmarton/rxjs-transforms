@@ -1,0 +1,21 @@
+<h1>windowCount(size, every)</h1>
+<div class="row">
+  <div class="box">
+    <input type="text" (keyup)="setA($event.target.value)" placeholder="a" />
+    <input type="text" (keyup)="setB($event.target.value)" placeholder="size" />
+    <input
+      type="text"
+      (keyup)="setC($event.target.value)"
+      placeholder="every"
+    />
+  </div>
+
+  <div class="box">
+    a: {{ a | async }} <br />
+    size: {{ b }} <br />
+    every: {{ c }} <br />
+  </div>
+
+  <div class="box">result: {{ x | async }}</div>
+  <div class="box">packet: {{ y | async }}</div>
+</div>

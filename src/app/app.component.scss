@@ -1,0 +1,44 @@
+* {
+  font-family: 'Lucida Sans';
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20vh;
+}
+
+.row {
+  display: flex;
+}
+
+.box {
+  border: 1px solid darkslategray;
+  display: inline-block;
+  text-align: center;
+  margin: 4px;
+  padding: 5px;
+  width: 180px;
+  min-height: 70px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px 1px rgba(darkslategray, 0.3);
+}
+
+input {
+  margin: 5px;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0;
+  margin-top: 40px;
+}
+
+hr {
+  width: 100%;
+}
+
+p {
+  margin: 0;
+  color: #777;
+}

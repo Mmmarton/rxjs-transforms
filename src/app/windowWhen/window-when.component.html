@@ -1,0 +1,12 @@
+<h1>windowWhen(selector)</h1>
+<div class="row">
+  <div class="box">
+    <input type="text" (keyup)="setA($event.target.value)" placeholder="a" />
+    <button (click)="setB()">Trigger</button>
+  </div>
+
+  <div class="box">a: {{ a | async }} <br /></div>
+
+  <div class="box">result: {{ x | async }}</div>
+  <div class="box">packet: {{ y | async }}</div>
+</div>

@@ -1,0 +1,11 @@
+<h1>scan(accumulator, seed)</h1>
+<p>like a live reduce</p>
+<div class="row">
+  <div class="box">
+    <input type="text" (keyup)="setA($event.target.value)" placeholder="a" />
+  </div>
+
+  <div class="box">a: {{ a | async }} <br /></div>
+
+  <div class="box">result: {{ x | async }}</div>
+</div>

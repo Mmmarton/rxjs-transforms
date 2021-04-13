@@ -1,0 +1,19 @@
+<h1>expand(project, concurrent, scheduler)</h1>
+<p>calls the function recursively (!)</p>
+<div class="row">
+  <div class="box">
+    <input type="text" (keyup)="setA($event.target.value)" placeholder="a" />
+    <input
+      type="text"
+      (keyup)="setB($event.target.value)"
+      placeholder="count"
+    />
+  </div>
+
+  <div class="box">
+    a: {{ a | async }} <br />
+    count: {{ b }} <br />
+  </div>
+
+  <div class="box">result: {{ x | async }}</div>
+</div>

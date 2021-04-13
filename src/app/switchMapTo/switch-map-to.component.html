@@ -1,0 +1,14 @@
+<h1>switchMapTo(observable, selector)</h1>
+<p>takes the last one, gives inner</p>
+<div class="row">
+  <div class="box">
+    <input type="text" (keyup)="setA($event.target.value)" placeholder="a" />
+  </div>
+
+  <div class="box">a: {{ a | async }} <br /></div>
+
+  <div class="box">result: {{ x | async }}</div>
+  <div class="box">
+    <pre>history: {{ y }}</pre>
+  </div>
+</div>

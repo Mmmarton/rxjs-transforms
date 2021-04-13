@@ -1,0 +1,22 @@
+<h1>mergeMap(project, selector, concurrent)</h1>
+<p>takes concurrently the values</p>
+<div class="row">
+  <div class="box">
+    <input type="text" (keyup)="setA($event.target.value)" placeholder="a" />
+    <input
+      type="text"
+      (keyup)="setB($event.target.value)"
+      placeholder="concurrent"
+    />
+  </div>
+
+  <div class="box">
+    a: {{ a | async }} <br />
+    concurrent: {{ b }} <br />
+  </div>
+
+  <div class="box">result: {{ x | async }}</div>
+  <div class="box">
+    <pre>history: {{ y }}</pre>
+  </div>
+</div>

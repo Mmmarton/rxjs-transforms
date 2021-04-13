@@ -1,0 +1,19 @@
+<h1>pluck(properties)</h1>
+<p>like a map, but takes property by name</p>
+<div class="row">
+  <div class="box">
+    <input type="text" (keyup)="setA($event.target.value)" placeholder="key" />
+    <input
+      type="text"
+      (keyup)="setB($event.target.value)"
+      placeholder="value"
+    />
+  </div>
+
+  <div class="box">
+    key: {{ a }} <br />
+    value: {{ b }} <br />
+  </div>
+
+  <div class="box">result: {{ x | async }}</div>
+</div>

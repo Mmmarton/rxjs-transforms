@@ -1,0 +1,16 @@
+<h1>mapTo(value)</h1>
+<p>maps to a given value</p>
+<div class="row">
+  <div class="box">
+    <input type="text" (keyup)="setA($event.target.value)" placeholder="a" />
+    <input
+      type="text"
+      (keyup)="setB($event.target.value)"
+      placeholder="value"
+    />
+  </div>
+
+  <div class="box">a: {{ a | async }} <br />value: {{ b }} <br /></div>
+
+  <div class="box">result: {{ x | async }}</div>
+</div>

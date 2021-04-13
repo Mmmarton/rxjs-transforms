@@ -3,13 +3,12 @@ import { Subject } from 'rxjs';
 import { buffer } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: 'app.component.html',
-  styleUrls: ['app.component.scss'],
+  selector: 'buffer',
+  templateUrl: 'buffer.component.html',
+  styleUrls: ['buffer.component.scss'],
 })
-export class AppComponent {
+export class BufferComponent {
   a = new Subject<string>();
-  b = new Subject<string>();
   t = new Subject<void>();
   c = this.a.asObservable().pipe(buffer(this.t.asObservable()));
 
@@ -17,10 +16,6 @@ export class AppComponent {
 
   setA(value: string) {
     this.a.next(value);
-  }
-
-  setB(value: string) {
-    this.b.next(value);
   }
 
   trigger() {

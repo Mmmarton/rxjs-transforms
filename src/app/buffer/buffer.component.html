@@ -1,0 +1,12 @@
+<h1>buffer(obs)</h1>
+<p>splits the stream into chunks</p>
+<div class="row">
+  <div class="box">
+    <input type="text" (keyup)="setA($event.target.value)" placeholder="a" />
+    <button (click)="trigger()">Trigger</button>
+  </div>
+
+  <div class="box">a: {{ a | async }}</div>
+
+  <div class="box">result: {{ c | async }}</div>
+</div>
